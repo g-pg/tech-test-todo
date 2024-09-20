@@ -11,14 +11,12 @@ import SocialLabel from "./_components/social-label/SocialLabel";
 
 export default function Home() {
 	//States
-	const { todos, addTodo, deleteTodo, toggleTodo } = useTodos();
 	const [showAddTodo, setShowAddTodo] = useState(false);
 
 	//Data
+	const { todos, addTodo, deleteTodo, toggleTodo } = useTodos();
 	const doneTodos: Todo[] = [];
 	const pendingTodos: Todo[] = [];
-
-	//Helpers
 	todos.forEach((todo) => {
 		todo.done ? doneTodos.push(todo) : pendingTodos.push(todo);
 	});
