@@ -65,10 +65,7 @@
 @media screen and (max-width: 720px) {
 	.pageWrapper {
 		padding-inline: 1rem;
-		// display: unset;
-		place-content: unset;
-		place-items: center;
-		min-height: unset;
+		min-height: 50vh;
 	}
 
 	.todoCard {
