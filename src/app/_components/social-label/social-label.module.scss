@@ -1,0 +1,31 @@
+@import "@/styles/colors.scss";
+
+.wrapper {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.3rem;
+	color: $foreground-light;
+	box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 0.3rem;
+	opacity: 0.3;
+	transition: all 0.25s ease;
+	> a:hover {
+		color: $primary;
+	}
+}
+
+.wrapper:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 720px) {
+	.wrapper {
+		display: none;
+	}
+}

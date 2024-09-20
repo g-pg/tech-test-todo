@@ -1,0 +1,52 @@
+@import "@/styles/colors.scss";
+.btn {
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	background: none;
+	cursor: pointer;
+	transition: all 0.25s linear;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+	width: 100%;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.primary {
+	background-image: linear-gradient(to right, $primary 0%, $primary-light 100%);
+	color: $bg;
+}
+
+.secondary {
+	background-color: $muted;
+	color: $foreground;
+}
+
+.outline {
+	border: 1px solid $border;
+}
+
+.danger {
+	background-image: linear-gradient(to right, $danger 0%, #f05353 100%);
+	color: $bg;
+}
+
+// Sizes
+.lg {
+	padding: 1.25rem 1.75rem;
+	font-size: 1rem;
+}
+
+.md {
+	padding: 1rem 1.5rem;
+	font-size: 1rem;
+}
+
+.sm {
+	padding: 0.3rem 0.3rem;
+}

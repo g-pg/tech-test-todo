@@ -1,0 +1,64 @@
+@import "@/styles/colors.scss";
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	border: 1px dashed #d7dde9;
+	border-spacing: 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	p {
+		margin-right: auto;
+	}
+
+	&:hover {
+		background-color: #f7f9fd;
+		border: 1px solid #f7f9fd;
+	}
+}
+
+.checkboxWrapper {
+	display: flex;
+	gap: 0.6rem;
+	align-items: center;
+}
+
+.checkbox {
+	margin: 0;
+	margin-top: 3px;
+	width: 18px;
+	height: 18px;
+	transform: translateY(-0.075em);
+	cursor: pointer;
+	&::before {
+		content: "";
+		width: 0.65em;
+		height: 0.65em;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1em 1em var(--form-control-color);
+	}
+}
+
+.done {
+	text-decoration: line-through;
+	color: $foreground-light;
+}
+
+.trashBtn {
+	width: fit-content !important;
+	color: $secondary;
+	transition: none !important;
+	&:hover {
+		color: $foreground-light;
+	}
+}
+
+// .trashBtn:hover {
+// 	filter: hue-rotate(100deg) saturate(1.5);
+// 	transition: all 0.2s ease;
+// }

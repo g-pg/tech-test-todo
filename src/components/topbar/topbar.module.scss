@@ -1,0 +1,53 @@
+@import "@/styles/colors.scss";
+
+.wrapper {
+	padding: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid $border;
+	margin-bottom: 2rem;
+}
+
+.userWelcome {
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.date {
+	font-size: 1.125rem;
+	color: $foreground-light;
+}
+
+.logoWrapper {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	img {
+		max-width: 33px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.wrapper {
+		flex-direction: column;
+		align-items: start;
+		gap: 0.5rem;
+	}
+
+	.logoWrapper,
+	.userWelcome,
+	.date {
+		font-size: 1rem;
+	}
+
+	.wrapper {
+		margin-bottom: 0rem;
+	}
+}

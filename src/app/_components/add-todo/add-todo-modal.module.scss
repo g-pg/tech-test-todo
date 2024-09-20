@@ -1,0 +1,35 @@
+@import "@/styles/colors.scss";
+.btnsWrapper {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.formItem {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.input {
+	border: 1px solid $border;
+	padding: 1rem;
+	border-radius: 8px;
+	width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.btnsWrapper {
+		flex-direction: column-reverse;
+	}
+}

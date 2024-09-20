@@ -1,0 +1,23 @@
+.btnsWrapper {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+}
+
+.modal {
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+	.modal {
+		margin-top: 0;
+	}
+	.btnsWrapper {
+		flex-direction: column-reverse;
+	}
+}
