@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import FocalPointLogo from "@/assets/logo.svg";
 import styles from "./topbar.module.scss";
 import { formatDateToText } from "@/utils/dateFormatter";
