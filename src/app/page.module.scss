@@ -17,7 +17,6 @@
 	max-height: min(60vh, 500px);
 	text-align: center;
 	overflow-y: auto;
-	border-bottom: none;
 	scrollbar-gutter: stable;
 	& .title {
 		color: $foreground-light;
