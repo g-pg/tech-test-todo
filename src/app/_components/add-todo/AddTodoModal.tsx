@@ -16,6 +16,7 @@ export default function AddTodoModal({ show, setShow, addTodo }: Props) {
 
 	const [input, setInput] = React.useState("");
 
+	//Helpers
 	function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		if (!isTodoValid(input)) {
@@ -23,6 +24,12 @@ export default function AddTodoModal({ show, setShow, addTodo }: Props) {
 		}
 		addTodo(input);
 		setShow(false);
+	}
+
+	function handleKeydown(e: React.KeyboardEvent) {
+		if (e.key === "Enter") {
+			handleSubmit(e as unknown as React.FormEvent<HTMLFormElement>);
+		}
 	}
 
 	return (
@@ -38,6 +45,7 @@ export default function AddTodoModal({ show, setShow, addTodo }: Props) {
 						maxLength={50}
 						id="name"
 						onChange={(e) => setInput(e.target.value)}
+						onKeyDown={handleKeydown}
 					/>
 				</div>
 				<div className={styles.btnsWrapper}>
